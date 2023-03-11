@@ -81,7 +81,7 @@ label:hover .img-meme {
 	margin: 1rem;
 	display: flex;
 	width: 40%;
-	transition: all 1s ease-in-out;
+	transition: all 0.5s ease-out;
 }
 
 label:hover .icon-close {
@@ -114,4 +114,28 @@ span {
 	transition: all 0.1s ease-out;
 	transform: rotate(45deg);
 	opacity: 0;
+}
+
+@media (min-width:320px) {
+	* {
+		font-size: 0.9rem;
+	}
+}
+
+@media (min-width:820px) {
+	* {
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width:1920px) {
+	* {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width:319px) {
+	* {
+		font-size: 0.9rem;
+	}
 }
