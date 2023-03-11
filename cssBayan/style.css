@@ -57,7 +57,7 @@ label {
 	align-items: center;
 }
 
-label:has(~input:checked) {
+label:has(~input:checked) span {
 	color: black;
 }
 
@@ -68,7 +68,7 @@ label:has(~input:checked) .img-meme {
 }
 
 label:has(~input:checked) .icon-close {
-	transform: rotate(0deg);
+	transform: rotate(45deg);
 }
 
 span {
@@ -78,6 +78,16 @@ span {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	color: rgb(32, 114, 207);
+	transition: all 0.2s ease-out;
+}
+
+ul label:active span,
+label:active .icon-close,
+label:active img {
+	color: rgb(32, 114, 207);
+	opacity: 0.7;
+	transition: all 0.1s ease-out;
 }
 
 .img-meme {
@@ -89,18 +99,16 @@ span {
 
 .icon-close {
 	width: 0.6rem;
-	transition: all 0.1s ease-out;
-	transform: rotate(45deg);
+	transition: all 0.2s ease-out;
+	transform: rotate(0deg);
 	opacity: 0;
+	color: black;
 }
 
 @media (hover:hover) {
-	ul {
-		color: rgb(32, 114, 207);
-	}
-
-	ul:hover {
+	ul:hover span {
 		color: black;
+		transition: all 0.5s ease-out;
 	}
 
 	ul:hover .icon-close {
