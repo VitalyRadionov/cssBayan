@@ -33,6 +33,16 @@ ul {
 	display: flex;
 	flex-direction: column;
 	list-style-type: none;
+
+	color: rgb(32, 114, 207);
+}
+
+ul:hover {
+	color: black;
+}
+
+ul:hover .icon-close {
+	opacity: 1;
 }
 
 li {
@@ -58,26 +68,50 @@ label {
 }
 
 label:has(~input:checked) {
-	color: rgb(32, 114, 207);
+	color: black;
 }
 
-label:has(~input:checked) img {
+label:has(~input:checked) .img-meme {
+	margin: 1rem;
 	display: flex;
-	width: 50%;
+	width: 40%;
 }
 
-label:hover img {
+label:hover .img-meme {
+	margin: 1rem;
 	display: flex;
-	width: 50%;
-	transition: width 1s ease-in-out;
+	width: 40%;
+	transition: all 1s ease-in-out;
+}
+
+label:hover .icon-close {
+	transform: rotate(0deg);
+	transition: all 0.1s ease-out;
+}
+
+label:has(~input:checked) .icon-close {
+	transform: rotate(0deg);
 }
 
 span {
 	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
-img {
+.img-meme {
 	width: 0%;
-	transition: width 0.5s ease-out;
+	margin: 0rem;
+	transition: all 0.5s ease-out;
 	display: flex;
+}
+
+.icon-close {
+	width: 0.6rem;
+	transition: all 0.1s ease-out;
+	transform: rotate(45deg);
+	opacity: 0;
 }
