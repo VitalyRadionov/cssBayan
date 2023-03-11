@@ -33,16 +33,6 @@ ul {
 	display: flex;
 	flex-direction: column;
 	list-style-type: none;
-
-	color: rgb(32, 114, 207);
-}
-
-ul:hover {
-	color: black;
-}
-
-ul:hover .icon-close {
-	opacity: 1;
 }
 
 li {
@@ -77,18 +67,6 @@ label:has(~input:checked) .img-meme {
 	width: 40%;
 }
 
-label:hover .img-meme {
-	margin: 1rem;
-	display: flex;
-	width: 40%;
-	transition: all 0.5s ease-out;
-}
-
-label:hover .icon-close {
-	transform: rotate(0deg);
-	transition: all 0.1s ease-out;
-}
-
 label:has(~input:checked) .icon-close {
 	transform: rotate(0deg);
 }
@@ -114,6 +92,32 @@ span {
 	transition: all 0.1s ease-out;
 	transform: rotate(45deg);
 	opacity: 0;
+}
+
+@media (pointer:fine) {
+	ul {
+		color: rgb(32, 114, 207);
+	}
+
+	ul:hover {
+		color: black;
+	}
+
+	ul:hover .icon-close {
+		opacity: 1;
+	}
+
+	label:hover .img-meme {
+		margin: 1rem;
+		display: flex;
+		width: 40%;
+		transition: all 0.5s ease-out;
+	}
+
+	label:hover .icon-close {
+		transform: rotate(0deg);
+		transition: all 0.1s ease-out;
+	}
 }
 
 @media (min-width:320px) {
