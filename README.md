@@ -1,1 +1,1 @@
-# [Task: CSS Bayan](https://github.com/DrDiman/CSS-Bayan-task)
+# [Task: CSS Bayan](https://github.com/DrDiman/CSS-Bayan-task) - [view deployment](https://vitalyradionov.github.io/cssBayan/cssBayan/)
