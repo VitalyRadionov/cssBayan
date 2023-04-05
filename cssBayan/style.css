@@ -3,7 +3,7 @@
 * {
 	font-family: 'Istok Web', sans-serif;
 	font-weight: 700;
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 body {
@@ -55,6 +55,7 @@ label {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-size: 2rem;
 }
 
 label:has(~input:checked) span {
@@ -81,6 +82,7 @@ span {
 	align-items: center;
 	color: rgb(32, 114, 207);
 	transition: all 0.2s ease-out;
+	font-size: 200%;
 }
 
 ul label:active span,
